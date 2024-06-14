@@ -1,0 +1,96 @@
+@import url(./reset.css);
+@import url(./svg.css);
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 45px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+nav{
+  display: flex;
+  width: 100vw;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#menu_btn {
+  width: 16px;
+  height: 16px;
+}
+
+#menu_logo {
+  margin-left: 20px;
+}
+
+.menu, .search_mic, .profile_group {
+  display: flex;
+  align-items: center;
+}
+
+.search_mic {
+  justify-content: space-between;
+  position: relative;
+  width: 500px;
+  height: 39px;
+  overflow: visible;
+}
+
+#search_bar_left {
+  position: relative;
+  width: 418px;
+  height: 29px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 16px;
+}
+
+#search_bar_right {
+  position: absolute;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 75px;
+  right: 12%;  
+  height: 29px;
+  background-color: dimgrey;
+  border: 2px solid gray;
+}
+
+#search_btn {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+}
+
+#mic {
+  position: relative;
+  margin-left: 15px;
+  border: 2px solid gray;
+  background-color: dimgray;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+#mic_img{
+  width: 25px;
+}
+
+.profile_group {
+  justify-content: space-around;
+  width: 140px;
+}
+
+#broadcast_btn, #notification_btn {
+  width: 16px;
+}
+
+#profile_btn {
+  border-radius: 50%;
+}

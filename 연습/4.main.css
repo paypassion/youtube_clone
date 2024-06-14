@@ -1,0 +1,335 @@
+main {
+  height: 300vh;
+  padding-left: 75px;
+  padding-top: 100px;
+  padding-right: 40px;
+  background-color: var(--color-main);
+}
+
+.video-wrapper {
+  background-color: var(--color-main);
+  display: grid;
+  grid-template-columns: repeat(6 ,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px; 
+  padding-top: 15px;
+  padding-bottom: 105px;
+}
+/* -----------------video_thumbnail------------------ */
+
+.video-card {
+  background-color: var(--color-main);  
+  height: 320px;
+  position:  relative;
+  box-sizing: border-box;
+} 
+
+.video-thumbnail-wrapper {
+  position: relative;
+  aspect-ratio: 16/9;
+  margin-bottom: 10px;
+} 
+
+.video-thumbnail {
+  width: 100%;
+  height: 211px;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  cursor: pointer;
+} 
+
+.video-thumbnail-timestamp {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 7%;
+  right: 2%;
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-weight: bolder;
+}
+
+/*----------------- vidoo_inform---------------------- */
+
+.video-inform {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-inform__profile__img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.video-inform__text {
+  color: var(--color-font-channel_views_date);
+  padding-left: 10px;
+  width:80%;
+  
+}
+
+.video-inform__text__title {
+  color: var(--color-font-video);
+  line-height: 1.4em;
+  margin-bottom: 5px;
+  /* padding 했을 때는 글자가 보였는데 왜 margin 일 땐 안 보이지? 왜나면 padding box를 커지게 하니까!*/
+  font-size: var(--font-inform-title);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  background-color: var(--color-main);
+}
+
+.video-inform__text__channel-name {
+  padding-top: 3px;
+}
+
+.video-inform__text__views-date {
+  padding-top: 7px;
+  padding-bottom: 3px;
+}
+
+.video-inform__text__channel-name, .video-inform__text__views-date{
+  font-size: var(--font-inform-sub);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: var(--color-main);
+}
+
+.video-inform__text__channel-name > i {
+  color: var(--color-font-channel_views_date); 
+  padding-left: 5px;
+}
+
+.video-inform__menu { 
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: -5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 9px;
+  border-radius: 50%;
+  opacity: 0;
+  
+}
+
+.video-inform__menu > i  {
+  font-size: 19px;
+}
+
+.video-inform:hover .video-inform__menu {
+  opacity: 1;
+}
+
+.video-inform__menu:active {
+  background-color: var(--color-mic-btn);
+  z-index: 2;
+}
+.video-inform__menu:visited {
+  background-color: var(--color-video-card);
+  border: 5px solid white;
+}
+
+/* ------------------shorts--------------------- */
+
+.shorts-icon-bar {
+  background-color: var(--color-main);
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.shorts-icon-bar > h1 {
+  color: var(--color-font-video);
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.shorts-wrapper {
+  background-color: var(--color-main);
+  height: 560px;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  gap: 9px;
+}
+
+.shorts-card {
+  box-sizing: border-box;
+}
+
+
+.shorts-thumbnail-wrapper {
+  height: 448px;
+  width: 100%;
+}
+
+.shorts-thumbnail {
+  height: 448px;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+}
+
+.shorts-menu {
+  position: absolute;
+  right: -4%;
+  top: 8%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.shorts-desc {
+  width: 100%;
+  height: 18%;
+  background-color: var(--color-main);
+  cursor: pointer;
+  padding-top: 12px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.shorts-desc:hover .shorts-menu {
+  opacity: 1;
+}
+
+.shorts-menu:active {
+  background-color: var(--color-mic-btn);
+  z-index: 3;
+}
+
+.shorts-title {
+  color: var(--color-font-video);
+  max-width: 230px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  font-weight: bold;
+  line-height: 1.2em;
+  font-size: var(--font-inform-title);
+  background-color: var(--color-main);
+  box-sizing: border-box;
+  padding-left: 0.5%;
+}
+
+.shorts-views {
+  background-color: var(--color-main);
+  padding-top: 5px;
+  padding-left: 1%;
+  color: var(--color-font-channel_views_date);
+}
+
+.show-more {
+  background-color: var(--color-mic-btn);
+  padding-top: 1px;
+}
+
+.show-more__btn {
+  background-color: var(--color-main);
+  width: 25%;
+  height: 50px;
+  border: 1px solid var(--color-mic-btn);
+  position: absolute;
+  bottom: -64.2%;
+  left: 40%;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.show-more__btn:hover {
+  background-color: var(--color-mic-btn);
+}
+
+/* ---------------media query--------------- */
+
+@media (min-width:1731px) and (max-width: 2060px) {
+  .video-card:nth-last-child(-n + 2) {
+    display: none;   
+  }
+
+  .video-wrapper {
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .shorts-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .shorts-wrapper {
+    grid-template-columns: repeat(7,1fr)
+  }
+}
+
+@media (min-width:1400px) and (max-width:1730px) {
+  .video-card:nth-last-child(-n + 4) {
+    display: none;   
+  }
+
+  .video-wrapper {
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: repeat(2, 1fr);
+  } 
+
+  .shorts-card:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .shorts-wrapper {
+    grid-template-columns: repeat(6,1fr)
+  }
+}
+
+@media (min-width:1081px) and (max-width:1401px) {
+  .video-card:nth-last-child(-n + 6) {
+    display: none;   
+  }
+
+  .video-wrapper {
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(2, 1fr);
+  } 
+
+  .shorts-card:nth-last-child(-n + 4) {
+    display: none;
+  }
+
+  .shorts-wrapper {
+    grid-template-columns: repeat(5,1fr)
+  }
+}
+
+@media (min-width:0px) and (max-width:1080px) {
+  .video-card:nth-last-child(-n + 8) {
+    display: none;   
+  }
+
+  .video-wrapper {
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(2, 1fr);
+  } 
+
+  .shorts-card:nth-last-child(-n + 6) {
+    display: none;
+  }
+
+  .shorts-wrapper {
+    grid-template-columns: repeat(3,1fr)
+  }
+}
+

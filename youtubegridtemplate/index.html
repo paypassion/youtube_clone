@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-bar__left">
+          <div class="menu-btn nav-bar__btn">
+            <i class="fa-solid fa-bars icon"></i>
+          </div>
+          <div class="logo-btn">
+            <a href="#">
+              <img class="logo-img" src="images/youtubelogo.png" />
+            </a>
+          </div>
+        </div>
+        <div class="nav-bar__middle">
+          <div class="search-bar__outer">
+            <input
+              type="search"
+              name="search"
+              id="search-bar"
+              placeholder="Search"
+            />
+
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+          </div>
+          <div class="microphone-btn nav-bar__btn">
+            <i class="fa-solid fa-microphone icon"></i>
+          </div>
+        </div>
+        <div class="nav-bar__right">
+          <div class="upload-btn nav-bar__btn">
+            <i class="fa-solid fa-video icon"></i>
+          </div>
+          <div class="notification-btn nav-bar__btn">
+            <i class="fa-solid fa-bell icon"></i>
+          </div>
+          <img class="profile-img" src="images/profileimg.jpeg" />
+        </div>
+      </nav>
+      <nav class="side-bar">
+        <div class="home-btn side-bar__btn">
+          <i class="fa-solid fa-house icon"></i>
+          <p class="side-bar__text">Home</p>
+        </div>
+        <div class="shorts-btn side-bar__btn">
+          <i class="fa-solid fa-clapperboard icon"></i>
+          <p class="side-bar__text">Shorts</p>
+        </div>
+        <div class="subscriptions-btn side-bar__btn">
+          <i class="fa-solid fa-film icon"></i>
+          <p class="side-bar__text">Subscriptions</p>
+        </div>
+        <div class="music-btn side-bar__btn">
+          <i class="fa-regular fa-circle-play icon"></i>
+          <p class="side-bar__text">Youtube Music</p>
+        </div>
+        <div class="you-btn side-bar__btn">
+          <i class="fa-brands fa-youtube icon"></i>
+          <p class="side-bar__text">You</p>
+        </div>
+      </nav>
+      <div class="tag-bar">
+        <div class="tag-bar__btn">All</div>
+        <div class="tag-bar__btn">Gaming</div>
+        <div class="tag-bar__btn">League of Legends</div>
+        <div class="tag-bar__btn">Video game development</div>
+        <div class="tag-bar__btn">Mixes</div>
+        <div class="tag-bar__btn">Music</div>
+        <div class="tag-bar__btn">Live</div>
+        <div class="tag-bar__btn">Python</div>
+        <div class="tag-bar__btn">Debates</div>
+        <div class="tag-bar__btn">Podcasts</div>
+        <div class="tag-bar__btn">Editing</div>
+        <div class="tag-bar__btn">Computers</div>
+        <div class="tag-bar__btn">Animated films</div>
+        <div class="tag-bar__btn">NBA</div>
+        <div class="tag-bar__btn">Guitar solos</div>
+        <div class="tag-bar__btn">Skateboarding</div>
+        <div class="tag-bar__btn">Culinary</div>
+        <div class="tag-bar__btn">Game shows</div>
+        <div class="tag-bar__btn">Film criticisms</div>
+        <div class="tag-bar__btn">Podcasts</div>
+        <div class="tag-bar__btn">Law enforcement</div>
+        <div class="tag-bar__btn">Fine dining</div>
+        <div class="tag-bar__btn">All</div>
+        <div class="tag-bar__btn">Gaming</div>
+        <div class="tag-bar__btn">League of Legends</div>
+        <div class="tag-bar__btn">Video game development</div>
+        <div class="tag-bar__btn">Mixes</div>
+        <div class="tag-bar__btn">Music</div>
+        <div class="tag-bar__btn">Live</div>
+        <div class="tag-bar__btn">Python</div>
+        <div class="tag-bar__btn">Debates</div>
+        <div class="tag-bar__btn">Podcasts</div>
+        <div class="tag-bar__btn">Editing</div>
+        <div class="tag-bar__btn">Computers</div>
+        <div class="tag-bar__btn">Animated films</div>
+        <div class="tag-bar__btn">NBA</div>
+        <div class="tag-bar__btn">Guitar solos</div>
+        <div class="tag-bar__btn">Skateboarding</div>
+        <div class="tag-bar__btn">Culinary arts</div>
+        <div class="tag-bar__btn">Game shows</div>
+        <div class="tag-bar__btn">Film criticisms</div>
+        <div class="tag-bar__btn">Podcasts</div>
+        <div class="tag-bar__btn">Law enforcement</div>
+        <div class="tag-bar__btn">Fine dining</div>
+      </div>
+      <div class="fixed-btn__wrapper">
+        <div class="fixed-btn nav-bar__btn">
+          <i class="fa-solid fa-arrow-right icon"></i>
+        </div>
+      </div>
+      <div class="right-column"></div>
+    </header>
+    <main>
+      <div class="hero-box1">
+        <div class="video-content">
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">8:16</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  Joel Embiid Caught Cheating!
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>JxmyHighroller <i class="fa-solid fa-circle-check"></i></p>
+                  <p>328K views • 5 hours ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">28:53</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">huh? | Kitchen Nightmares</div>
+                <div class="video-card__channel-name-desc">
+                  <p>
+                    Kitchen Nightmares
+                    <i class="fa-solid fa-circle-check"></i>
+                  </p>
+                  <p>56K views • 15 hours ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">2:52:15</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  CSS Flexbox Crash Course - The fundamentals you need to know
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>Programming With Pax</p>
+                  <p>843 views • 2 years ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">7:07</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  Transistors Explained - How transistors work
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>The Engineering Mindset</p>
+                  <p>18M views • 2 years ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">17:10</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  The Dark and Disturbing Downfall of Howard Stern
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>Patrick Cc: <i class="fa-solid fa-circle-check"></i></p>
+                  <p>308K views • 12 hours ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">28:22</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">CS50x 2024 - Lecture 1 - C</div>
+                <div class="video-card__channel-name-desc">
+                  <p>CS50</p>
+                  <p>127K views • 4 weeks ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">31:43</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  a day in the life of an engineer working from home
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>Joma Tech</p>
+                  <p>19M views • 2 years ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">2:09:03</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  Ancient Rome Expert Answers Roman Empire Questions From
+                  Twitter | Tech Support | WIRED
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>WIRED</p>
+                  <p>870K views • 2 months ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">11:18</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  Teach Yourself a Language in 15 Minutes a Day: Step-by-Step
+                  Demonstration
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>Alexander Arguelles</p>
+                  <p>1.9M views • 2 years ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">19:40</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">How to Speak</div>
+                <div class="video-card__channel-name-desc">
+                  <p>MIT OpenCourseWare</p>
+                  <p>17M views • 4 years ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">48:38</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  Michael Fassbender Breaks Down His Career, from 'Inglorious
+                  Basterds' to 'X-Men' | Vanity Fair
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>Vanity Fair</p>
+                  <p>596K views • 1 month ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-card__thumbnail__wrapper">
+              <div class="video-card__thumbnail"></div>
+              <div class="timestamp">27:13</div>
+            </div>
+            <div class="video-card__details__wrapper">
+              <img
+                class="profile-img"
+                src="https://via.placeholder.com/30x30"
+              />
+              <div class="video-card__details">
+                <div class="video-card__title">
+                  ILLAOI JUST GOT AN AMAZING BUFF TO HER TENTACLES! (THEY ARE
+                  MASSIVE NOW)
+                </div>
+                <div class="video-card__channel-name-desc">
+                  <p>TC Zwag</p>
+                  <p>155K views • 3 days ago</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical video-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="shorts-header">
+          <img src="images/shorts-header-icon.png" alt="shorts-header-icon" />
+
+          <h1>Shorts</h1>
+        </div>
+        <div class="shorts-content">
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              3 HOUR LEG DAY HAD HIS LEGS WOBBLING. 😳😅 (via thekingofdiet/TT)
+              #shorts
+            </div>
+            <p>2M views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              I call this one Fish Out of Water 😂 | Movie title: The Ridiculous
+              6 | #movie #film
+            </div>
+            <p>1.6M views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              How Many Chocolate Bars Can Hold Me?
+            </div>
+            <p>866K views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">Wasp vs Venus Flytrap #shorts</div>
+            <p>320K views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              Frostbite? Try this… #medical #health #survival
+            </div>
+            <p>1.3M views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              It DOES NOT start with a U | Who's That Pokemon #Shorts #Pokemon
+              #whosthatpokemon
+            </div>
+            <p>1.7M views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">100 billion years later Japan</div>
+            <p>272K views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              I got a tattoo of my best friend's name
+            </div>
+            <p>350K views</p>
+          </div>
+          <div class="shorts-card">
+            <div class="shorts-card__thumbnail"></div>
+            <div class="shorts-card__title">
+              This toddler lock has a SERIOUS flaw.
+            </div>
+            <p>679K views</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/1473061a29.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,500 @@
+/* ----------Main Elements---------- */
+:root {
+  --main-color: #0f0f0f;
+  --secondary-color: #222222;
+  --tertiary-color: #2e2e2e;
+  --highlight: rgb(61, 155, 255);
+  --text-color: #888888;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+}
+
+h1 {
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-left: 95px;
+  padding-top: 127px;
+  padding-right: 40px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.logo-img {
+  padding-top: 3px;
+  height: 30px;
+  width: 100px;
+}
+.icon {
+  font-size: 16px;
+  color: white;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* -----Navigation Bar----- */
+.nav-bar {
+  background-color: var(--main-color);
+  height: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 40px 0px 20px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+}
+
+.nav-bar__left {
+  width: 150px;
+} /* 100 + 40 + 10 = 150*/
+
+.nav-bar__middle {
+  width: 655px;
+} /* 600 + 40 + 15 = 655 */
+
+.nav-bar__right {
+  width: 135px;
+} /* 40 + 10 + 40 + 10 + 35= */
+
+.nav-bar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -----Navigation Bar | Search Bar*/
+.search-bar__outer {
+  display: flex;
+  width: 600px;
+  background-color: var(--secondary-color);
+  height: 40px;
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+#search-bar {
+  height: 100%;
+  width: 90%;
+  border-radius: 20px 0px 0px 20px;
+  background-color: var(--main-color);
+  border: 1px solid var(--tertiary-color);
+  outline: none;
+  color: var(--text-color);
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+#search-bar::placeholder {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#search-bar:focus {
+  border: 1px solid var(--highlight);
+}
+
+/* -----Navigation Bar | Button */
+.nav-bar__btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.microphone-btn {
+  background-color: var(--secondary-color);
+}
+
+.nav-bar__btn:hover {
+  background-color: var(--secondary-color);
+  transition-duration: 0.2s;
+}
+
+.microphone-btn:hover {
+  background-color: var(--tertiary-color);
+  transition-duration: 0.2s;
+}
+
+/* -----Side Bar----- */
+.side-bar {
+  background-color: var(--main-color);
+  height: 100vh;
+  width: 75px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+/* -----Side Bar | Button */
+.side-bar__btn {
+  height: 72px;
+  width: 60px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-bar__btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* -----Side Bar | Text */
+.side-bar__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  font-size: 10px;
+  font-weight: normal;
+  color: white;
+  width: 49px;
+  margin-top: 8px;
+}
+
+/* -----Tags Bar----- */
+.tag-bar {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  padding: 10px 5px;
+  position: fixed;
+  top: 52px;
+  left: 95px;
+  z-index: 2;
+}
+
+/* -----Tags Bar | Button */
+.tag-bar__btn {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.tag-bar__btn:hover {
+  background-color: var(--tertiary-color);
+}
+.tag-bar__btn:first-child {
+  background-color: white;
+  color: var(--main-color);
+  text-align: center;
+}
+
+/* -----Fixed Arrow Button on Tags Bar----- */
+.fixed-btn__wrapper {
+  padding-left: 30px;
+  box-sizing: border-box;
+  right: 0;
+  width: 80px;
+  height: 56px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 44px;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );
+  z-index: 2;
+}
+
+/* -----Right Column----- */
+.right-column {
+  position: fixed;
+  background-color: var(--main-color);
+  height: 100vh;
+  width: 40px;
+  right: 0;
+  top: 102px;
+} /* (technically don't need because color is black anyway, but it's nice to have for layout purposes) */
+
+/* -----------Main Content---------- */
+
+/* -----Video Content Box----- */
+.video-content {
+  margin-bottom: 100px;
+  display: grid;
+  gap: 20px;
+  background-color: red;
+}
+
+/* -----Video Card----- */
+.video-card {
+  height: 320px;
+  overflow: hidden;
+  background-color: tomato;
+}
+
+/* -----Video Card | Thumbnail */
+.video-card__thumbnail__wrapper {
+  height: 66%;
+  position: relative;
+  margin-bottom: 10px;
+} /* Need to wrap video-card thumbnail and timestamp together so that I can position the timestamp relative to the wrapper. This is necessary because the thumbnail is an <img>, so I can't nest the timestamp inside of it.  */
+
+.video-card__thumbnail {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.timestamp {
+  position: absolute;
+  height: 12px;
+  font-size: 12px;
+  color: white;
+  bottom: 2%;
+  right: 1%;
+  background-color: var(--main-color);
+  font-weight: bolder;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* -----Video Card | Details */
+.video-card__details__wrapper {
+  display: flex;
+  height: 34%;
+} /* Needed for placing the profile-img next to the video-card__details */
+
+.video-card__details {
+  height: 100%;
+  margin-left: 10px;
+  width: 85%;
+  cursor: pointer;
+  background-color: pink;
+}
+
+.video-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show before overflow-hidden/ellipses kicks in */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 20px;
+  background-color: blueviolet;
+}
+.video-card__channel-name-desc {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 20px;
+}
+
+/* -----Video Card | Icon (Triple Vertical Dot on Hover) */
+.video-icon {
+  color: transparent;
+  font-size: 20px;
+}
+
+.video-card__details__wrapper:hover .video-icon {
+  color: white;
+  transition-duration: 0.2s;
+}
+
+/* -----Shorts Header----- */
+.shorts-header {
+  display: flex;
+  padding-bottom: 35px;
+  background-color: blue;
+}
+.shorts-header h1 {
+  margin-left: 10px;
+}
+
+/* -----Shorts Content Box----- */
+.shorts-content {
+  display: grid;
+  gap: 20px;
+  background-color: red;
+}
+
+/* -----Shorts Card----- */
+.shorts-card {
+  height: 560px;
+  cursor: pointer;
+  background-color: tomato;
+}
+
+/* -----Shorts Card | Thumbnail */
+.shorts-card__thumbnail {
+  height: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+/* -----Shorts Card | Title */
+.shorts-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-weight: bold;
+
+  line-height: 20px;
+  font-size: 18px;
+  background-color: blueviolet;
+}
+
+/* -----Shorts Card | Viewcount Text */
+.shorts-card p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 20px;
+  background-color: pink;
+  padding-top: 5px;
+}
+
+/* ----------Media Queries---------- */
+
+/* 2061 - 10000 */
+@media screen and (min-width: 2061px) {
+  .video-content {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+/* 1731 - 2060 */
+@media screen and (min-width: 1731px) and (max-width: 2060px) {
+  .video-content {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .video-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+  .shorts-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+/* 1401 - 1730 */
+@media screen and (min-width: 1401px) and (max-width: 1730px) {
+  .video-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .video-card:nth-last-child(-n + 4) {
+    display: none;
+  }
+  .shorts-card:nth-last-child(-n + 3) {
+    display: none;
+  }
+}
+
+/* 1151 - 1400 */
+@media screen and (min-width: 1151px) and (max-width: 1400px) {
+  .video-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .video-card:nth-last-child(-n + 6) {
+    display: none;
+  }
+  .shorts-card:nth-last-child(-n + 4) {
+    display: none;
+  }
+}
+/* 1081 - 1150 */
+@media screen and (min-width: 1081px) and (max-width: 1150px) {
+  .video-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .video-card:nth-last-child(-n + 6) {
+    display: none;
+  }
+  .shorts-card:nth-last-child(-n + 5) {
+    display: none;
+  }
+}
+
+/* 0 - 1080 */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+  .video-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .shorts-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-card:nth-last-child(-n + 8) {
+    display: none;
+  }
+  .shorts-card:nth-last-child(-n + 6) {
+    display: none;
+  }
+}
